@@ -1,0 +1,25 @@
+# Node dependencies
+node_modules/
+
+# Playwright outputs
+test-results/
+playwright-report/
+
+# Build outputs
+dist/
+build/
+
+# Coverage
+coverage/
+
+# IDE/editor settings
+.vscode/
+.idea/
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
+
+# Env config
+.env
+.env.local
