@@ -30,10 +30,10 @@ This project automates functional test cases for (https://www.saucedemo.com) usi
 ---
 
 ## ✅ Bonus Features
-Page Object Model (POM)
-HTML Report (using cucumber-html-reporter)
-Screenshot on failure
-Data-driven testing via Examples: table
+- ✅ Page Object Model (POM)
+- ✅ HTML Report (using cucumber-html-reporter)
+- ✅ Screenshot on failure
+- ✅ Data-driven testing via Examples: table
 
 ---
 
