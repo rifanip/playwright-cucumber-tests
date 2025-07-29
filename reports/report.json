@@ -4,517 +4,6 @@
     "elements": [
       {
         "description": "",
-        "id": "add-and-remove-items-from-cart;add-items-to-the-cart-and-verify-the-cart-badge",
-        "keyword": "Scenario",
-        "line": 8,
-        "name": "Add items to the cart and verify the cart badge",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 134970166
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 5,
-            "name": "user is on the login page",
-            "match": {
-              "location": "step-definitions/login.step.ts:9"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1064739332
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 6,
-            "name": "user enters username \"standard_user\" and password \"secret_sauce\"",
-            "match": {
-              "location": "step-definitions/login.step.ts:16"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 156335333
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 9,
-            "name": "user adds the first item to the cart",
-            "match": {
-              "location": "step-definitions/cart.step.ts:5"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 25665375
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 10,
-            "name": "the cart badge should display \"1\"",
-            "match": {
-              "location": "step-definitions/cart.step.ts:14"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 6854791
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 11,
-            "name": "user add more item to the cart",
-            "match": {
-              "location": "step-definitions/cart.step.ts:10"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 18955458
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 12,
-            "name": "the cart badge should display \"2\"",
-            "match": {
-              "location": "step-definitions/cart.step.ts:14"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 3109916
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 154289999
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@addtocart",
-            "line": 1
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "add-and-remove-items-from-cart;remove-item-from-the-cart",
-        "keyword": "Scenario",
-        "line": 14,
-        "name": "Remove item from the cart",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 107738916
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 5,
-            "name": "user is on the login page",
-            "match": {
-              "location": "step-definitions/login.step.ts:9"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1023169916
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 6,
-            "name": "user enters username \"standard_user\" and password \"secret_sauce\"",
-            "match": {
-              "location": "step-definitions/login.step.ts:16"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 154766208
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 15,
-            "name": "user adds the first item to the cart",
-            "match": {
-              "location": "step-definitions/cart.step.ts:5"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 11272915
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 16,
-            "name": "the cart badge should display \"1\"",
-            "match": {
-              "location": "step-definitions/cart.step.ts:14"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 2583916
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 17,
-            "name": "user removes the item from the cart",
-            "match": {
-              "location": "step-definitions/cart.step.ts:18"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 21308500
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 18,
-            "name": "the cart badge should display \"0\"",
-            "match": {
-              "location": "step-definitions/cart.step.ts:14"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 3079291
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 157765957
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@addtocart",
-            "line": 1
-          }
-        ],
-        "type": "scenario"
-      }
-    ],
-    "id": "add-and-remove-items-from-cart",
-    "line": 2,
-    "keyword": "Feature",
-    "name": "Add and Remove Items from Cart",
-    "tags": [
-      {
-        "name": "@addtocart",
-        "line": 1
-      }
-    ],
-    "uri": "features/cart.feature"
-  },
-  {
-    "description": "",
-    "elements": [
-      {
-        "description": "",
-        "id": "checkout-flow;checkout-with-missing-information",
-        "keyword": "Scenario",
-        "line": 11,
-        "name": "Checkout with missing information",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 110925166
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 5,
-            "name": "user is on the login page",
-            "match": {
-              "location": "step-definitions/login.step.ts:9"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 930816083
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 6,
-            "name": "user enters username \"standard_user\" and password \"secret_sauce\"",
-            "match": {
-              "location": "step-definitions/login.step.ts:16"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 150947083
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 7,
-            "name": "user adds the first item to the cart",
-            "match": {
-              "location": "step-definitions/cart.step.ts:5"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 12506666
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 8,
-            "name": "user navigates to the cart page",
-            "match": {
-              "location": "step-definitions/checkout.step.ts:5"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 74960082
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 9,
-            "name": "user proceeds to checkout",
-            "match": {
-              "location": "step-definitions/checkout.step.ts:10"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 74091542
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 12,
-            "name": "user leave the information empty",
-            "match": {
-              "location": "step-definitions/checkout.step.ts:15"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 23516333
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 13,
-            "name": "the error mandatory checking appears",
-            "match": {
-              "location": "step-definitions/checkout.step.ts:20"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 5621207
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 159618707
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@checkout",
-            "line": 1
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "checkout-flow;complete-the-checkout-process-successfully",
-        "keyword": "Scenario",
-        "line": 15,
-        "name": "Complete the checkout process successfully",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 109878999
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 5,
-            "name": "user is on the login page",
-            "match": {
-              "location": "step-definitions/login.step.ts:9"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1110371541
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 6,
-            "name": "user enters username \"standard_user\" and password \"secret_sauce\"",
-            "match": {
-              "location": "step-definitions/login.step.ts:16"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 130826833
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 7,
-            "name": "user adds the first item to the cart",
-            "match": {
-              "location": "step-definitions/cart.step.ts:5"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 8945541
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 8,
-            "name": "user navigates to the cart page",
-            "match": {
-              "location": "step-definitions/checkout.step.ts:5"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 82629750
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 9,
-            "name": "user proceeds to checkout",
-            "match": {
-              "location": "step-definitions/checkout.step.ts:10"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 69801792
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 16,
-            "name": "user enters checkout information with first name \"Rifatul\", last name \"Hanifah\", and zip code \"12345\"",
-            "match": {
-              "location": "step-definitions/checkout.step.ts:24"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 101829458
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 17,
-            "name": "user finishes the checkout process",
-            "match": {
-              "location": "step-definitions/checkout.step.ts:31"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 79912750
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 18,
-            "name": "the checkout should be successful with a confirmation message",
-            "match": {
-              "location": "step-definitions/checkout.step.ts:35"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 3290332
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 188209374
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@checkout",
-            "line": 1
-          }
-        ],
-        "type": "scenario"
-      }
-    ],
-    "id": "checkout-flow",
-    "line": 2,
-    "keyword": "Feature",
-    "name": "Checkout Flow",
-    "tags": [
-      {
-        "name": "@checkout",
-        "line": 1
-      }
-    ],
-    "uri": "features/checkout.feature"
-  },
-  {
-    "description": "",
-    "elements": [
-      {
-        "description": "",
         "id": "login-&-logout;user-tries-to-login-with-various-credentials",
         "keyword": "Scenario Outline",
         "line": 14,
@@ -525,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 105327832
+              "duration": 326488416
             }
           },
           {
@@ -538,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1047190916
+              "duration": 2226959749
             }
           },
           {
@@ -551,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 126859875
+              "duration": 130701666
             }
           },
           {
@@ -564,7 +53,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3577291
+              "duration": 5762166
             }
           },
           {
@@ -577,7 +66,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2800916
+              "duration": 2044166
             }
           },
           {
@@ -590,7 +79,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 12356959
+              "duration": 20958416
             }
           },
           {
@@ -603,7 +92,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 901583833
+              "duration": 974073749
             }
           },
           {
@@ -611,7 +100,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 137877957
+              "duration": 115369124
             }
           }
         ],
@@ -635,7 +124,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 98186959
+              "duration": 79913917
             }
           },
           {
@@ -648,7 +137,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1020413416
+              "duration": 964798374
             }
           },
           {
@@ -661,7 +150,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 68514499
+              "duration": 55915792
             }
           },
           {
@@ -674,7 +163,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 8017250
+              "duration": 4427375
             }
           },
           {
@@ -687,7 +176,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 81792
+              "duration": 119249
             }
           },
           {
@@ -700,7 +189,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 27124
+              "duration": 33624
             }
           },
           {
@@ -713,7 +202,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 22082
+              "duration": 167875
             }
           },
           {
@@ -721,7 +210,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 161237541
+              "duration": 99122583
             }
           }
         ],
@@ -745,7 +234,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 104716833
+              "duration": 80140208
             }
           },
           {
@@ -758,7 +247,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1038025959
+              "duration": 949465375
             }
           },
           {
@@ -771,7 +260,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 59400666
+              "duration": 62787124
             }
           },
           {
@@ -784,7 +273,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 7960291
+              "duration": 3430000
             }
           },
           {
@@ -797,7 +286,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 125125
+              "duration": 42125
             }
           },
           {
@@ -810,7 +299,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 31250
+              "duration": 42124
             }
           },
           {
@@ -823,7 +312,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 56250
+              "duration": 16249
             }
           },
           {
@@ -831,7 +320,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 164362874
+              "duration": 96502374
             }
           }
         ],
@@ -855,7 +344,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 105099041
+              "duration": 75311709
             }
           },
           {
@@ -868,7 +357,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1031201915
+              "duration": 996178333
             }
           },
           {
@@ -881,7 +370,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 133141749
+              "duration": 112223292
             }
           },
           {
@@ -894,7 +383,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2699333
+              "duration": 1669749
             }
           },
           {
@@ -907,7 +396,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1322207
+              "duration": 1697416
             }
           },
           {
@@ -920,7 +409,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 20137125
+              "duration": 184259792
             }
           },
           {
@@ -933,7 +422,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 896735708
+              "duration": 964568916
             }
           },
           {
@@ -941,7 +430,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 132283790
+              "duration": 115289250
             }
           }
         ],

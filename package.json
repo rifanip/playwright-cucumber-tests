@@ -4,6 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "cucumber-js --require-module ts-node/register",
+    "clean:report": "rm -rf reports/*",
     "report": "ts-node report-generator.ts"
   },
   "keywords": [],
